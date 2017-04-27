@@ -1,4 +1,5 @@
-###Example:
+### Example:
+
 _using koa router_
 > 
     const router = require('koa-router');
@@ -9,5 +10,5 @@ _using koa router_
      .post('userAddProcess', '/user-add',fileHandler('single','profilePic'), async () => {....})
 
 
-You can now access the files using *ctx.request.file* for single upload (single)
-and *ctx.request.files* for multiple uploads (array, fields and any)
+You can now access the files using **_ctx.request.file_** for single upload (single)
+and **_ctx.request.files_** for multiple uploads (array, fields and any)
