@@ -1,4 +1,4 @@
-### Example:
+## Example:
 
 _using koa router_
 > 
@@ -9,6 +9,7 @@ _using koa router_
      .get(...)
      .post('userAddProcess', '/user-add',fileHandler('single','profilePic'), async () => {....})
 
-
-You can now access the files using **_ctx.request.file_** for single upload (single)
-and **_ctx.request.files_** for multiple uploads (array, fields and any)
+## Access uploads using
+* ctx.request.file - for single upload (single)
+* ctx.request.files - for multiple uploads (array, fields and any)
+* ctx.request.body - for other fields
